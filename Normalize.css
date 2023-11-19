@@ -46,14 +46,16 @@
     padding-left: 30px;
   }
 
-  #navigation button {
+  #navigation h2 {
     padding: 0;
     background: none;
     font-weight: bolder;
     margin: 20px;
+    color: black;
+    font-size: 12px;
   }
 
-  #navigation button:hover {
+  #navigation h2:hover {
     text-decoration: underline;
     text-underline-offset: 0.4em;
   }
@@ -345,6 +347,7 @@
 
   #checkavailability {
     background-color: #ffffff;
+    color: black;
   }
   /* page3 */
 
@@ -444,16 +447,22 @@ Desktop view
     border: none;
   }
 
-  #navigation button {
+  #navigation {
+    background-color: #6db784;
+  }
+
+  #navigation h2 {
     text-decoration: none;
     padding: 0;
     border: none;
     background: none;
     font-weight: bolder;
     margin: 20px;
+    color: black;
+    font-size: 16px;
   }
 
-  #navigation button:hover {
+  #navigation h2:hover {
     text-decoration: underline;
     text-underline-offset: 0.4em;
   }
@@ -757,6 +766,7 @@ Desktop view
 
   #checkavailability {
     background-color: #ffffff;
+    color: black;
   }
   /* page3 */
 
