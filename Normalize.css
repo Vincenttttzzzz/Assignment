@@ -384,9 +384,27 @@
   }
 }
 
+/*
+
+
+-------------------------------------------------------------
+
+
+Desktop view
+
+
+
+-------------------------------------------------------------
+
+
+
+
+
+*/
+
 @media screen and (min-width: 768px) {
   html {
-    font-size: 12px;
+    font-size: 16px;
     background-color: #eeeeee;
   }
 
@@ -452,19 +470,14 @@
   /*First Page Container*/
   .container {
     background-image: url("./wireframe/libraryjapan.jpg");
-    /* Add the background image like this */
     height: 600px;
     width: 100%;
-    /* Give the background image the correct height */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
-    /* Places content inside on top */
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
   }
 
   .transbox {
@@ -525,7 +538,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 40px;
   }
 
   .ChoaChuKang,
@@ -545,16 +557,18 @@
   .rentroom,
   .satisfyingservices {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
-    padding-right: 10px;
+    padding-right: 100px;
+    padding-left: 100px;
   }
 
   .choosebook {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
-    padding-left: 10px;
+    padding-right: 100px;
+    padding-left: 100px;
   }
 
   .textarea {
@@ -583,6 +597,7 @@
 
   #month-year button {
     font-size: 20px;
+    background: none;
   }
 
   #findbookroom {
@@ -591,6 +606,7 @@
     align-items: center;
     gap: 10px;
   }
+
   h4 {
     display: block;
     text-align: center;
@@ -606,18 +622,18 @@
   }
 
   #Calendar {
-    font-size: 11px;
+    font-size: 16px;
     border: 1px solid #ffffff;
     text-align: center;
     border-collapse: separate;
     border-spacing: 0;
-    width: 500px;
+    width: 800px;
   }
 
   #Calendar th,
   #Calendar td {
     width: 60px;
-    height: 60px;
+    height: 80px;
   }
 
   #Calendar td:hover {
@@ -633,8 +649,8 @@
   #InsertInfo {
     display: block;
     border: 1px solid #ffffff;
-    width: 300px;
-    height: 200px;
+    width: 600px;
+    height: 300px;
     text-align: center;
   }
 
@@ -650,41 +666,44 @@
   }
 
   /* Steps */
+
   .BookRoom .Search::before {
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: black;
     margin-right: 5px;
     content: "1";
     color: white;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .BookRoom .Book::before {
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: black;
     margin-right: 5px;
     content: "2";
     color: white;
     text-align: center;
+    font-size: 16px;
   }
 
   .BookRoom .Payment::before {
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: black;
     margin-right: 5px;
     content: "3";
     color: white;
     text-align: center;
+    font-size: 16px;
   }
 
   #Rooms {
@@ -695,28 +714,39 @@
   .Room1 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin: auto;
+    gap: 100px;
   }
 
   .Adults,
   .Children {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 30px;
+    justify-content: center;
   }
 
   .input {
     display: flex;
-    flex-direction: c;
+    flex-direction: row;
     width: 50px;
-    gap: 5px;
+    gap: 30px;
     align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 5px;
   }
 
   .input button {
     border-radius: 50%;
     background-color: #ffffff;
+  }
+
+  .input span {
+    border: 0.5px solid black;
+    border-radius: 10%;
+    border-width: 3px;
+    min-width: 50px;
   }
 
   #AddRoom {
