@@ -42,8 +42,8 @@
 
   #navigation {
     display: flex;
-    flex-direction: column;
-    padding-left: 30px;
+    flex-direction: row;
+    justify-content: center;
   }
 
   #navigation h2 {
@@ -60,35 +60,23 @@
     text-underline-offset: 0.4em;
   }
 
-  /*NAVIGATION*/
-  #navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-right: 40px;
-  }
-
   /*First Page Container*/
   .container {
     background-image: url("./wireframe/libraryjapan.jpg");
-    /* Add the background image like this */
     height: 600px;
     width: 100%;
-    /* Give the background image the correct height */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
-    /* Places content inside on top */
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
   }
 
   .transbox {
+    display: flex;
+    flex-direction: column;
     background: rgba(0, 0, 0, 0.2);
-    /* Opacity can be given to background with rgba*/
     height: 100%;
     width: 100%;
     text-align: center;
@@ -107,24 +95,25 @@
     color: white;
     font-size: 45px;
     margin-right: 150px;
+    margin-bottom: 0;
   }
 
   .transbox .Rooms {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 300px;
+    margin-left: 190px;
+    margin-top: 20px;
     gap: 25px;
-  }
-  .transbox h2 span {
-    align-items: center;
+    font-size: 45px;
+    font-weight: bolder;
+    color: white;
   }
 
   .transbox img {
     width: 45px;
     margin: 0;
     padding: 0;
-    margin-left: 0px;
     align-items: center;
   }
 
@@ -143,7 +132,6 @@
   .container1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
@@ -312,7 +300,7 @@
     justify-content: space-between;
   }
 
-  .Room1 {
+  .Roomone {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -349,16 +337,21 @@
     background-color: #ffffff;
     color: black;
   }
+
   /* page3 */
 
   /* Filters */
-  #SearchInfo,
-  #Filter {
+  #SearchInfo {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     margin-left: 30px;
     margin-right: 30px;
+  }
+
+  #Filter {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   #GuestInput {
@@ -371,6 +364,7 @@
     display: flex;
     align-items: center;
     padding-right: 40px;
+    height: 40px;
   }
 
   #Filter span:last-child {
@@ -383,6 +377,62 @@
     background-color: #6db784;
     padding: 10px;
     margin-top: 10px;
+    text-align: center;
+  }
+
+  .Roomslist {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #Room1,
+  #Room2,
+  #Room3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Roomslist .Description {
+    border: 2px solid gray;
+    width: 395px;
+    border-top: none;
+    border-radius: 0px 0px 15px 15px;
+  }
+
+  .Roomslist .Description name {
+    font-size: 18px;
+    font-weight: bolder;
+  }
+
+  .Roomslist .Description span {
+    display: block;
+    margin-top: 5px;
+  }
+
+  .Roomslist img {
+    width: 400px;
+    height: 300px;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 20px;
+  }
+
+  .Roomslist .Description .Price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .Roomslist .Description .Price a {
+    border: 10px solid #6db784;
+    width: 100px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #6db784;
+    font-size: 20px;
     text-align: center;
   }
 }
@@ -447,10 +497,6 @@ Desktop view
     border: none;
   }
 
-  #navigation {
-    background-color: #6db784;
-  }
-
   #navigation h2 {
     text-decoration: none;
     padding: 0;
@@ -474,6 +520,7 @@ Desktop view
     justify-content: space-around;
     align-items: center;
     padding-right: 40px;
+    background-color: #6db784;
   }
 
   /*First Page Container*/
@@ -490,8 +537,9 @@ Desktop view
   }
 
   .transbox {
+    display: flex;
+    flex-direction: column;
     background: rgba(0, 0, 0, 0.2);
-    /* Opacity can be given to background with rgba*/
     height: 100%;
     width: 100%;
     text-align: center;
@@ -510,24 +558,25 @@ Desktop view
     color: white;
     font-size: 45px;
     margin-right: 150px;
+    margin-bottom: 0;
   }
 
   .transbox .Rooms {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 300px;
+    margin-left: 230px;
+    margin-top: 20px;
     gap: 25px;
-  }
-  .transbox h2 span {
-    align-items: center;
+    font-size: 45px;
+    font-weight: bolder;
+    color: white;
   }
 
   .transbox img {
-    width: 45px;
+    width: 65px;
     margin: 0;
     padding: 0;
-    margin-left: 0px;
     align-items: center;
   }
 
@@ -720,7 +769,7 @@ Desktop view
     justify-content: space-between;
   }
 
-  .Room1 {
+  .Roomone {
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -768,6 +817,7 @@ Desktop view
     background-color: #ffffff;
     color: black;
   }
+
   /* page3 */
 
   /* Filters */
@@ -806,17 +856,13 @@ Desktop view
     text-align: center;
   }
 
-  .Rooms {
+  .Roomslist {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     gap: 50px;
     margin: 50px;
-  }
-
-  .Rooms img {
-    border-radius: 25px 0px 0px 0px;
   }
 
   #Room1,
@@ -826,7 +872,11 @@ Desktop view
     flex-direction: row;
   }
 
-  .Rooms .Description {
+  .Roomslist img {
+    border-radius: 15px 0px 0px 15px;
+  }
+
+  .Roomslist .Description {
     display: flex;
     flex-direction: column;
     border: 5px solid #ffffff;
@@ -839,22 +889,22 @@ Desktop view
     font-size: 18px;
   }
 
-  .Rooms .Description name,
-  .Rooms .Description .Price strong {
+  .Roomslist .Description name,
+  .Roomslist .Description .Price strong {
     font-size: 26px;
     font-weight: bold;
   }
 
-  .Rooms .Description span {
+  .Roomslist .Description span {
     margin-top: 10px;
     gap: 0px;
   }
 
-  .Rooms .Description hr {
+  .Roomslist .Description hr {
     width: 650px;
   }
 
-  .Rooms .Description .Price {
+  .Roomslist .Description .Price {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -863,16 +913,82 @@ Desktop view
     gap: 50px;
   }
 
-  .Rooms .Description .Price button {
+  .Roomslist .Description .Price a {
     border: 10px solid #6db784;
     width: 100px;
     border-radius: 10px 10px 10px 10px;
     background-color: #6db784;
     font-size: 20px;
+    text-align: center;
   }
 
-  .Rooms .Description .Price button:hover {
+  .Roomslist .Description .Price a:hover {
     border: 10px solid gray;
     background-color: gray;
+  }
+
+  /* 
+
+
+  Page 4
+
+
+  */
+
+  #Payment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #GuestDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    width: 800px;
+    height: 700px;
+    margin-left: 100px;
+  }
+
+  #ChosenRoom1 {
+    margin-right: 80px;
+    width: 350px;
+    height: 450px;
+    border: 1px solid gray;
+    border-top: none;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  #ChosenRoom1 img {
+    width: 350px;
+    height: 300px;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  #ChosenRoom1 .Description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 10px;
+  }
+
+  #ChosenRoom1 .Description name {
+    font-weight: bolder;
+    font-size: 20px;
+  }
+
+  #ChosenRoom1 .Price {
+    border-top: 1px solid gray;
+    padding-top: 10px;
+  }
+
+  .formfield {
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
   }
 }
