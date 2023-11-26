@@ -647,6 +647,7 @@ Desktop view
 
   /* Title */
 
+  /*
   #month-year {
     display: flex;
     flex-direction: row;
@@ -703,14 +704,131 @@ Desktop view
     display: flex;
     flex-direction: row;
   }
+*/
+
+  .container-page-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 100px;
+  }
+
+  .container-calendar {
+    width: 100%;
+    height: 100vh;
+    background-color: #eeeeee;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .calendar {
+    width: 49rem;
+    height: 50rem;
+    background-color: #222227;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+    margin-top: 100px;
+  }
+
+  .month {
+    width: 100%;
+    height: 12rem;
+    background-color: #167e56;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2;
+    text-align: center;
+    text-shadow: 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+  }
+
+  .month i {
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+
+  .month h5 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .month p {
+    font-size: 1.6rem;
+  }
+
+  .weekdays {
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .weekdays div {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width: calc(44rem / 7);
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .days div {
+    font-size: 1.2rem;
+    margin: 0.3rem;
+    width: calc(37.5rem / 7);
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    border: 0.2rem solid transparent;
+  }
+
+  .days div:hover {
+    background-color: #262626;
+    border: 0.2rem solid #777;
+    cursor: pointer;
+  }
+
+  .prev-date,
+  .next-date {
+    opacity: 0.5;
+  }
+
+  .prev,
+  .next {
+    background-color: #167e56;
+    font-size: 40px;
+  }
 
   #InsertInfo {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 1px solid #ffffff;
+    background-color: #167e56;
     width: 600px;
     height: 300px;
     text-align: center;
   }
+
+  /*     Book Room     */
 
   .BookRoom h3 {
     margin: 20px;
@@ -807,10 +925,12 @@ Desktop view
     min-width: 50px;
   }
 
-  #AddRoom {
+  .AddRoom {
     border: none;
-    border-radius: 10%;
+    font-size: 1rem;
+    width: 50%;
     background-color: #ffffff;
+    margin-bottom: 20px;
   }
 
   #checkavailability {
@@ -941,15 +1061,88 @@ Desktop view
     justify-content: space-between;
   }
 
+  #Guest-Payment {
+    display: flex;
+    flex-direction: column;
+  }
+
   #GuestDetails {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: white;
     border-radius: 15px 15px 15px 15px;
-    width: 800px;
-    height: 700px;
+    width: 750px;
+    height: 500px;
     margin-left: 100px;
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+
+  #GuestDetails name,
+  #PaymentDetails name {
+    font-size: 24px;
+  }
+
+  .formfield {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 5px;
+  }
+
+  #container2,
+  #container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+  }
+
+  #container2 .column1,
+  #container2 .column2,
+  #container3 .column1,
+  #container3 .column2 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 20px;
+  }
+
+  #PaymentDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    width: 750px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 100px;
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+
+  #container3,
+  #container4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+  }
+
+  #container3 .column1,
+  #container3 .column2,
+  #container4 .column1,
+  #container4 .column2 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 20px;
   }
 
   #ChosenRoom1 {
@@ -984,11 +1177,5 @@ Desktop view
   #ChosenRoom1 .Price {
     border-top: 1px solid gray;
     padding-top: 10px;
-  }
-
-  .formfield {
-    display: flex;
-    flex: 50%;
-    flex-direction: column;
   }
 }

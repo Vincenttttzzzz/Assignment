@@ -10,7 +10,7 @@
   <body>
     <header>
       <a href="index.html">
-        <h1> Books & Rooms</h1>
+        <h1>Books & Rooms</h1>
       </a>
       <div id="navigation">
         <a href="BookRoom.html">
@@ -40,13 +40,7 @@
       </div>
     </div>
 
-    <divt id="findbookroom">
-      <div id="month-year">
-        <button class="arrowleft">&lt;  </button>
-        <h4>November 2023</h4>
-        <button class="arrowright">></button>
-      </div>
-
+    <!--
       <div id="SearchDates">
         <table id="Calendar">
           <thead>
@@ -101,6 +95,31 @@
           </tbody>
         </table>
       </div>
+      -->
+
+    <div class="container-page-2">
+      <div class="container-calendar">
+        <div class="calendar">
+          <div class="month">
+            <button class="prev">&lt;</button>
+            <div class="date">
+              <h5></h5>
+              <p></p>
+            </div>
+            <button class="next">&gt;</button>
+          </div>
+          <div class="weekdays">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="days"></div>
+        </div>
+      </div>
 
       <div id="InsertInfo">
         <h4>No. of Rooms and Guests</h4>
@@ -109,31 +128,33 @@
 
         <div id="Rooms">
           <div class="Roomone">
-            <container class="Adults">Adults
+            <div class="Adults">
+              Adults
               <div class="input">
                 <button>-</button>
                 <span>1</span>
                 <button>+</button>
               </div>
-            </container>
+            </div>
 
-            <container class="Children">Children
+            <div class="Children">
+              Children
               <div class="input">
                 <button>-</button>
                 <span>1</span>
                 <button>+</button>
               </div>
-            </container>
+            </div>
           </div>
         </div>
 
-        <button id="AddRoom">+ AddRoom</button>
-      </div>
+        <button class="AddRoom">+ AddRoom</button>
 
-      <a href="Room-Availability.html">
-        <span id="checkavailability">Check Availability</span>
-      </a>
-      <script src="./script.js"></script>
+        <a href="Room-Availability.html">
+          <span id="checkavailability">Check Availability</span>
+        </a>
+      </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

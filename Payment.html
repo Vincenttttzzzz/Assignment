@@ -31,7 +31,6 @@
       </div>
     </header>
 
-
     <div class="BookRoom">
       <h3>Payment</h3>
       <div class="steps">
@@ -41,26 +40,103 @@
       </div>
     </div>
 
-
     <div id="Payment">
+      <div id="Guest-Payment">
+        <div id="GuestDetails">
+          <name><strong>Guest Information</strong></name>
 
-      <div id="GuestDetails">
-        <name>Guest Information</name>
+          <div id="container2">
+            <div class="column1">
+              <div class="formfield">
+                <label for="firstname">First Name</label>
+                <input type="text" required />
+              </div>
+              <div class="formfield">
+                <label for="firstname">Email Address</label>
+                <input type="text" required />
+              </div>
+            </div>
 
-        <div class="column1">
-          <div class="formfield">
-            <label for="firstname">First Name</label>
-            <textarea id="firstname" rows="5">Textarea</textarea>
+            <div class="column2">
+              <div class="formfield">
+                <label for="firstname">Last Name</label>
+                <input type="text" required />
+              </div>
+              <div class="formfield">
+                <label for="firstname">Member Number</label>
+                <input type="text" Optional />
+              </div>
+            </div>
+          </div>
+
+          <p>
+            Note: To be credited for this stay, the name on your account must
+            match the guest name
+          </p>
+
+          <div class="checkbox">
+            <input type="checkbox" id="coonfirmation" name="confirmation" />
+            <label for="confirmation"
+              >Send my reservation confirmation via SMS</label
+            >
+          </div>
+
+          <div id="container3">
+            <div class="column1">
+              <div class="formfield">
+                <label for="firstname">Country/Region</label>
+                <input type="text" required />
+              </div>
+              <div class="formfield">
+                <label for="firstname">Address</label>
+                <input type="text" required />
+              </div>
+            </div>
+
+            <div class="column2">
+              <div class="formfield">
+                <label for="firstname">City</label>
+                <input type="text" required />
+              </div>
+              <div class="formfield">
+                <label for="firstname">State/Province</label>
+                <input type="text" Optional />
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="column2"> 
+        <div id="PaymentDetails">
+          <name><strong>Payment Information</strong></name>
 
+          <div id="container4">
+            <div class="column1">
+              <div class="formfield">
+                <label for="firstname">Credit/Debit Card Number</label>
+                <input type="text" required />
+              </div>
+              <div class="formfield">
+                <label for="firstname">Expiration Month</label>
+                <input type="text" required />
+              </div>
+            </div>
+
+            <div class="column2">
+              <div class="formfield">
+                <label for="firstname">Billing Zip Code</label>
+                <input type="text" required />
+              </div>
+              <div class="formfield">
+                <label for="firstname">Expiration Year</label>
+                <input type="text" Optional />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-  
+
       <div id="ChosenRoom1">
-        <img src="./wireframe/Room1.png" width="550" , height="350"/>
+        <img src="./wireframe/Room1.png" width="550" , height="350" />
         <div class="Description">
           <name>Room 1</name>
           <span>23 Nov 2023</span>
@@ -70,10 +146,6 @@
           </div>
         </div>
       </div>
-      
     </div>
-
-    </div>
-
   </body>
 </html>
