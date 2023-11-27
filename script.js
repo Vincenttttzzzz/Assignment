@@ -129,7 +129,9 @@ const updateCalendar = () => {
   }
 
   for (let i = 1; i <= lastDay; i++) {
-    days += `<div  onclick="selectDate(${i}, '${months[date.getMonth()]}',
+    days += `<div class="calendar-date" onclick="selectDate(${i}, '${
+      months[date.getMonth()]
+    }',
      '${date.getFullYear()}')">${i}</div>`;
   }
 
