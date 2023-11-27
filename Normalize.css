@@ -163,6 +163,7 @@
     flex-direction: column;
     margin: 1.25rem;
     text-justify: distribute;
+    text-align: center;
   }
 
   .footer {
@@ -177,6 +178,7 @@
 
   /* Title */
 
+  /*
   #month-year {
     display: flex;
     flex-direction: row;
@@ -231,13 +233,131 @@
     display: flex;
     flex-direction: row;
   }
+  */
+
+  .container-page-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .container-calendar {
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+  }
+
+  .calendar {
+    width: 100%;
+    height: 100%;
+    background-color: #222227;
+    box-shadow: 0 8px 48px rgba(0, 0, 0, 0.4);
+    margin-top: 4rem;
+    border: 1px solid red;
+  }
+
+  .month {
+    width: 100%;
+    height: 100%;
+    background-color: #167e56;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2;
+    text-align: center;
+    text-shadow: 1.6px 3.2px rgba(0, 0, 0, 0.5);
+  }
+
+  .month i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .month h5 {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+    margin-bottom: 16px;
+  }
+
+  .month p {
+    font-size: 12.8px;
+  }
+
+  .weekdays {
+    width: 100%;
+    height: 80px;
+    padding: 0 6.4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .weekdays div {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    width: calc(91.5% / 7);
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .days div {
+    font-size: 12px;
+    width: calc(82% / 7);
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 4.8px 8px rgba(0, 0, 0, 0.5);
+    border: 3.2px solid transparent;
+  }
+
+  .days div:hover {
+    background-color: #262626;
+    border: 3.2px solid #777;
+    cursor: pointer;
+  }
+
+  .prev-date,
+  .next-date {
+    opacity: 0.5;
+  }
+
+  .prev,
+  .next {
+    background-color: #167e56;
+    font-size: 2.5rem;
+  }
 
   #InsertInfo {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 0.0625rem solid #ffffff;
-    width: 18.75rem;
-    height: 12.5rem;
+    background-color: #167e56;
+    width: 30%;
+    height: 18%;
     text-align: center;
+    min-width: 18rem;
   }
 
   .BookRoom h3 {
@@ -736,7 +856,6 @@ Desktop view
     box-shadow: 0 8px 48px rgba(0, 0, 0, 0.4);
     margin-top: 6.25rem;
     border: 1px solid red;
-    flex-shrink: 5;
   }
 
   .month {
@@ -782,7 +901,7 @@ Desktop view
     font-size: 24px;
     font-weight: 400;
     letter-spacing: 1.6px;
-    width: calc(94.5% / 7);
+    width: calc(91.5% / 7);
     display: flex;
     justify-content: center;
     align-self: center;
@@ -792,15 +911,14 @@ Desktop view
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 3.2px;
+    padding: 4px;
     display: flex;
     justify-content: center;
   }
 
   .days div {
     font-size: 18px;
-
-    width: calc(89% / 7);
+    width: calc(85% / 7);
     height: 72px;
     display: flex;
     justify-content: center;
@@ -832,10 +950,10 @@ Desktop view
     align-items: center;
     border: 0.0625rem solid #ffffff;
     background-color: #167e56;
-    width: 37.5rem;
-    height: 18.75rem;
+    width: 30%;
+    height: 18%;
     text-align: center;
-    flex-wrap: wrap;
+    min-width: 24rem;
   }
 
   /*     Book Room     */
