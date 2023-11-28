@@ -1,0 +1,492 @@
+@media screen and (max-width: 48rem) {
+  html {
+    font-size: 1rem;
+    background-color: #eeeeee;
+    margin: 0;
+  }
+
+  body {
+    margin: 0;
+    font-family: "K2D", sans-serif;
+  }
+
+  @import url("https://fonts.cdnfonts.com/css/k2d");
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #6db784;
+    margin: 0;
+    padding: 0;
+    font-size: 0.375rem;
+    width: 100%;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+  }
+
+  #navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #navigation h2 {
+    padding: 0;
+    background: none;
+    font-weight: bolder;
+    margin: 1.25rem;
+    color: black;
+    font-size: 0.75rem;
+  }
+
+  #navigation h2:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+  }
+
+  .BookRoom h3 {
+    margin: 1.25rem;
+    margin-top: 2.5rem;
+  }
+
+  .BookRoom h4 {
+    font-size: 0.75rem;
+  }
+
+  .BookRoom .steps {
+    display: flex;
+    flex-direction: row;
+    margin: 1.25rem;
+    gap: 1.25rem;
+  }
+
+  /* Steps */
+  .BookRoom .Search::before {
+    display: inline-block;
+    width: 0.9375rem;
+    height: 0.9375rem;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 0.3125rem;
+    content: "1";
+    color: white;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+
+  .BookRoom .Book::before {
+    display: inline-block;
+    width: 0.9375rem;
+    height: 0.9375rem;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 0.3125rem;
+    content: "2";
+    color: white;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+
+  .BookRoom .Payment::before {
+    display: inline-block;
+    width: 0.9375rem;
+    height: 0.9375rem;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 0.3125rem;
+    content: "3";
+    color: white;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+
+  #Payment {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  #Guest-Payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #GuestDetails {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border-radius: 0.9375rem 0.9375rem 0.9375rem 0.9375rem;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    padding-top: 3.125rem;
+  }
+
+  #GuestDetails name,
+  #PaymentDetails name {
+    font-size: 1.5rem;
+  }
+
+  .formfield {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.25rem;
+    gap: 0.3125rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  #container1,
+  #container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  #container1 .column1,
+  #container2 .column2,
+  #container1 .column1,
+  #container2 .column2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-top: 1.25rem;
+  }
+
+  #PaymentDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0.9375rem 0.9375rem 0.9375rem 0.9375rem;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    margin-top: 6rem;
+    padding-top: 3.125rem;
+  }
+
+  #container2,
+  #container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  #container2 .column1,
+  #container2 .column2,
+  #container3 .column1,
+  #container3 .column2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 1.25rem;
+  }
+
+  #ChosenRoom1 {
+    margin: auto;
+    width: 80%;
+    height: 32.125%;
+    border: 0.0625rem solid gray;
+    border-top: none;
+    border-radius: 0.9375rem 0.9375rem 0rem 0rem;
+    margin-bottom: 5rem;
+    padding-bottom: 2rem;
+  }
+
+  #ChosenRoom1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.9375rem 0.9375rem 0rem 0rem;
+  }
+
+  #ChosenRoom1 .Description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 0.625rem;
+  }
+
+  #ChosenRoom1 .Description name {
+    font-weight: bolder;
+    font-size: 1.25rem;
+  }
+
+  #ChosenRoom1 .Price {
+    border-top: 0.0625rem solid gray;
+    padding-top: 0.625rem;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  html {
+    font-size: 1rem;
+    background-color: #eeeeee;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "K2D", sans-serif;
+  }
+
+  @import url("https://fonts.cdnfonts.com/css/k2d");
+
+  /*HEADER*/
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #6db784;
+    margin: 0;
+    padding: 0;
+    font-size: 0.375rem;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+    padding-left: 2.5rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+  }
+
+  #navigation h2 {
+    text-decoration: none;
+    padding: 0;
+    border: none;
+    background: none;
+    font-weight: bolder;
+    margin: 1.25rem;
+    color: black;
+    font-size: 1rem;
+  }
+
+  #navigation h2:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+  }
+
+  /*NAVIGATION*/
+  #navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 2.5rem;
+    background-color: #6db784;
+  }
+
+  .BookRoom h3 {
+    margin: 1.25rem;
+    margin-top: 2.5rem;
+  }
+  .BookRoom .steps {
+    display: flex;
+    flex-direction: row;
+    margin: 1.25rem;
+    gap: 1.25rem;
+  }
+
+  /* Steps */
+
+  .BookRoom .Search::before {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 0.3125rem;
+    content: "1";
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .BookRoom .Book::before {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 0.3125rem;
+    content: "2";
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .BookRoom .Payment::before {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 0.3125rem;
+    content: "3";
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  #Payment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #Guest-Payment {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #GuestDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 0.9375rem 0.9375rem 0.9375rem 0.9375rem;
+    width: 46.875vw;
+    height: 31.25rem;
+    margin-left: 10%;
+    padding-left: 3.125rem;
+    padding-right: 2rem;
+    padding-top: 3.125rem;
+  }
+
+  #GuestDetails name,
+  #PaymentDetails name {
+    font-size: 1.5rem;
+  }
+
+  .formfield {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.25rem;
+    gap: 0.3125rem;
+  }
+
+  #container1,
+  #container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+    padding-left: 2%;
+  }
+
+  #container1 .column1,
+  #container1 .column2,
+  #container2 .column1,
+  #container2 .column2 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 1.25rem;
+  }
+
+  #PaymentDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 0.9375rem 0.9375rem 0.9375rem 0.9375rem;
+    width: 46.875vw;
+    height: 18.25rem;
+    margin-left: 10%;
+    margin-top: 6.25rem;
+    padding-left: 3.125rem;
+    padding-right: 2rem;
+    padding-top: 3.125rem;
+  }
+
+  #container2,
+  #container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+    padding-left: 2%;
+  }
+
+  #container2 .column1,
+  #container2 .column2,
+  #container3 .column1,
+  #container3 .column2 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 1.25rem;
+  }
+
+  #ChosenRoom1 {
+    margin-left: 6.25rem;
+    margin-right: 5%;
+    width: 21.875rem;
+    height: 32.125%;
+    border: 0.0625rem solid gray;
+    border-top: none;
+    border-radius: 0.9375rem 0.9375rem 0rem 0rem;
+  }
+
+  #ChosenRoom1 img {
+    max-width: 34.375vw;
+    max-height: 21.875vw;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.9375rem 0.9375rem 0rem 0rem;
+  }
+
+  #ChosenRoom1 .Description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    gap: 0.625rem;
+  }
+
+  #ChosenRoom1 .Description name {
+    font-weight: bolder;
+    font-size: 1.25rem;
+  }
+
+  #ChosenRoom1 .Price {
+    border-top: 0.0625rem solid gray;
+    padding-top: 0.625rem;
+  }
+}
