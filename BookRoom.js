@@ -115,34 +115,8 @@ document
   .addEventListener("click", storeItem);
 
 /* Clear storage when page is refreshed */
-
+/*
 window.addEventListener("beforeunload", function () {
   localStorage.clear();
 });
-
-console.log(localStorage);
-
-const selectedDate = localStorage.getItem("selectedDate");
-const selectedMonth = localStorage.getItem("selectedMonth");
-const selectedYear = localStorage.getItem("selectedYear");
-
-console.log(selectedDate);
-console.log(selectedMonth);
-console.log(selectedYear);
-
-/*
-console.log(document.querySelector("#SearchInfo #GuestInput h5").length);
-document.querySelector("#GuestInput h5").innerHTML =
-  selectedDate + " " + selectedMonth + " " + selectedYear;
-  */
-
-const guestInput = document.querySelector(".Roomh5");
-
-console.log(guestInput);
-
-if (guestInput) {
-  guestInput.innerHTML =
-    selectedDate + " " + selectedMonth + " " + selectedYear;
-} else {
-  console.error("Element with ID 'GuestInput' not found.");
-}
+*/
