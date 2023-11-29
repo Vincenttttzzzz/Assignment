@@ -139,6 +139,20 @@
     padding-top: 3.125rem;
   }
 
+  #PaymentDetails {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border-radius: 0.9375rem 0.9375rem 0.9375rem 0.9375rem;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    margin-top: 6rem;
+    padding-top: 3.125rem;
+    padding-bottom: 2rem;
+  }
+
   #GuestDetails name,
   #PaymentDetails name {
     font-size: 1.5rem;
@@ -154,38 +168,6 @@
   }
 
   #container1,
-  #container2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
-  }
-
-  #container1 .column1,
-  #container2 .column2,
-  #container1 .column1,
-  #container2 .column2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80%;
-    margin-top: 1.25rem;
-  }
-
-  #PaymentDetails {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: white;
-    border-radius: 0.9375rem 0.9375rem 0.9375rem 0.9375rem;
-    width: 90%;
-    height: 100%;
-    margin: auto;
-    margin-top: 6rem;
-    padding-top: 3.125rem;
-  }
-
   #container2,
   #container3 {
     display: flex;
@@ -195,13 +177,22 @@
     gap: 0.625rem;
   }
 
+  #container1 .column1,
+  #container1 .column2,
   #container2 .column1,
   #container2 .column2,
   #container3 .column1,
   #container3 .column2 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 80%;
+    margin-top: 1.25rem;
+  }
+
+  .submit {
+    width: 80%;
+    margin-left: 10%;
     margin-top: 1.25rem;
   }
 
@@ -364,7 +355,9 @@
   #Payment {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    border: 1px solid red;
+    padding-bottom: 5rem;
   }
 
   #Guest-Payment {
@@ -375,20 +368,27 @@
   #GuestDetails {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    text-align: start;
     background-color: white;
     border-radius: 0.9375rem 0.9375rem 0.9375rem 0.9375rem;
     width: 46.875vw;
     height: 31.25rem;
     margin-left: 10%;
-    padding-left: 3.125rem;
     padding-right: 2rem;
-    padding-top: 3.125rem;
+    padding-top: 2rem;
   }
 
   #GuestDetails name,
   #PaymentDetails name {
     font-size: 1.5rem;
+    padding-left: 5rem;
+  }
+
+  #GuestDetails p,
+  #PaymentDetails p,
+  .checkbox {
+    padding-left: 11%;
   }
 
   .formfield {
@@ -402,7 +402,7 @@
   #container2 {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 0.625rem;
     padding-left: 2%;
@@ -425,19 +425,18 @@
     background-color: white;
     border-radius: 0.9375rem 0.9375rem 0.9375rem 0.9375rem;
     width: 46.875vw;
-    height: 18.25rem;
+    height: 14.25rem;
     margin-left: 10%;
-    margin-top: 6.25rem;
-    padding-left: 3.125rem;
+    margin-top: 2.5rem;
     padding-right: 2rem;
-    padding-top: 3.125rem;
+    padding-top: 2rem;
   }
 
   #container2,
   #container3 {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 0.625rem;
     padding-left: 2%;
@@ -453,8 +452,17 @@
     margin-top: 1.25rem;
   }
 
+  .BookNow {
+    width: 16rem;
+    height: 2rem;
+    margin-left: 10%;
+    margin-top: 1.25rem;
+    border-radius: 0.9375rem 0.9375rem 0.9375rem 0.9375rem;
+    background-color: #6db784;
+  }
+
   #ChosenRoom1 {
-    margin-left: 6.25rem;
+    margin-left: 5rem;
     margin-right: 5%;
     width: 21.875rem;
     height: 32.125%;
