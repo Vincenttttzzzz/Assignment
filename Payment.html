@@ -45,29 +45,29 @@
         <div id="GuestDetails">
           <name><strong>Guest Information</strong></name>
 
-          <div id="container1">
+          <form id="container1">
             <div class="column1">
               <div class="formfield">
-                <label for="firstname">First Name</label>
+                <label id="firstname" for="firstname">First Name</label>
                 <input type="text" required />
               </div>
               <div class="formfield">
-                <label for="lastname">Last Name</label>
+                <label id="lastname" for="lastname">Last Name</label>
                 <input type="text" required />
               </div>
             </div>
 
             <div class="column2">
               <div class="formfield">
-                <label for="email">Email Address</label>
+                <label id="email" for="email">Email Address</label>
                 <input type="email" required />
               </div>
               <div class="formfield">
-                <label for="member">Member Number</label>
+                <label id="member" for="member">Member Number</label>
                 <input type="text" Optional />
               </div>
             </div>
-          </div>
+          </form>
 
           <p>
             Note: To be credited for this stay, the name on your account must
@@ -75,63 +75,65 @@
           </p>
 
           <div class="checkbox">
-            <input type="checkbox" id="coonfirmation" name="confirmation" />
+            <input type="checkbox" id="confirmation" name="confirmation" />
             <label for="confirmation"
               >Send my reservation confirmation via SMS</label
             >
           </div>
 
-          <div id="container2">
+          <form id="container2">
             <div class="column1">
               <div class="formfield">
-                <label for="country">Country/Region</label>
+                <label id="country" for="country">Country/Region</label>
                 <input type="text" required />
               </div>
               <div class="formfield">
-                <label for="address">Address</label>
+                <label id="address" for="address">Address</label>
                 <input type="text" required />
               </div>
             </div>
 
             <div class="column2">
               <div class="formfield">
-                <label for="city">City</label>
+                <label id="city" for="city">City</label>
                 <input type="text" required />
               </div>
               <div class="formfield">
-                <label for="state">State/Province</label>
+                <label id="state" for="state">State/Province</label>
                 <input type="text" Optional />
               </div>
             </div>
-          </div>
+          </form>
         </div>
 
         <div id="PaymentDetails">
           <name><strong>Payment Information</strong></name>
 
-          <div id="container3">
+          <form id="container3">
             <div class="column1">
               <div class="formfield">
-                <label for="firstname">Credit/Debit Card Number</label>
+                <label id="cardnumber" for="cardnumber"
+                  >Credit/Debit Card Number</label
+                >
                 <input type="text" required />
               </div>
               <div class="formfield">
-                <label for="firstname">Expiration Month</label>
+                <label id="expmonth" for="expmonth">Expiration Month</label>
                 <input type="text" required />
               </div>
             </div>
 
             <div class="column2">
               <div class="formfield">
-                <label for="firstname">Billing Zip Code</label>
+                <label id="zipcode" for="zipcode">Billing Zip Code</label>
                 <input type="text" required />
               </div>
               <div class="formfield">
-                <label for="firstname">Expiration Year</label>
+                <label id="expyear" for="expyear">Expiration Year</label>
                 <input type="text" Optional />
               </div>
             </div>
-          </div>
+          </form>
         </div>
 
         <button class="BookNow">Book Now</button>
@@ -151,9 +153,21 @@
     </div>
 
     <dialog class="Confirmation">
-      <div class="Confirmation-header"></div>
+      <div class="Confirmation-header">
+        <span>Details</span>
+        <hr />
+      </div>
 
-      <div class="Confirmation-body"></div>
+      <div class="Confirmation-body">
+        <div class="Info">
+          <span>Name </span>
+          <span>Vincent</span>
+        </div>
+      </div>
+
+      <button class="Confirm">Confirm</button>
     </dialog>
+
+    <script src="Payment.js"></script>
   </body>
 </html>

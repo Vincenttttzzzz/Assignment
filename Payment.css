@@ -497,4 +497,22 @@
     border-top: 0.0625rem solid gray;
     padding-top: 0.625rem;
   }
+
+  .Confirmation {
+    border: none;
+    border-radius: 0.9375rem 0.9375rem 0.9375rem 0.9375rem;
+    padding-bottom: 10rem;
+    width: 25rem;
+    height: 30rem;
+  }
+
+  .Confirmation span {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .Confirmation::backdrop {
+    background-color: gray;
+    opacity: 0.5;
+  }
 }
