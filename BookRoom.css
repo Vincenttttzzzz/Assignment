@@ -14,8 +14,9 @@
 
   header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: #6db784;
     margin: 0;
     padding: 0;
@@ -32,6 +33,7 @@
     font-size: 1.25rem;
     text-align: center;
     align-items: center;
+    padding-left: 0.75rem;
   }
 
   button {
@@ -42,7 +44,6 @@
   #navigation {
     display: flex;
     flex-direction: row;
-    justify-content: center;
   }
 
   #navigation h2 {
@@ -52,6 +53,9 @@
     margin: 1.25rem;
     color: black;
     font-size: 0.75rem;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 0.625rem 0.625rem 0.625rem 0.625rem;
   }
 
   #navigation h2:hover {
@@ -302,6 +306,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background-color: #6db784;
     margin: 0;
     padding: 0;
@@ -374,6 +379,7 @@
     background-color: #222227;
     box-shadow: 0 8px 48px rgba(0, 0, 0, 0.4);
     margin-top: 6.25rem;
+    margin-bottom: 3rem;
   }
 
   .month {
@@ -465,10 +471,12 @@
     align-items: center;
     border: 0.0625rem solid #ffffff;
     background-color: #167e56;
+    border-radius: 0.9375rem 0.9375rem 0.9375rem 0.9375rem;
     width: 30%;
-    height: 18%;
+    height: 18rem;
     text-align: center;
     min-width: 24rem;
+    margin-bottom: 5rem;
   }
 
   /*     Book Room     */
@@ -558,7 +566,10 @@
 
   .input button {
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: #167e56;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid black;
   }
 
   .input span {
@@ -569,15 +580,20 @@
   }
 
   .AddRoom {
-    border: none;
+    border: 2px solid black;
     font-size: 16px;
     width: 50%;
-    background-color: #ffffff;
+    background-color: #167e56;
+    color: white;
     margin-bottom: 1.25rem;
+    border-radius: 0.625rem 0.625rem 0.625rem 0.625rem;
   }
 
   #checkavailability {
-    background-color: #ffffff;
-    color: black;
+    background-color: #167e56;
+    color: white;
+    border: 2px solid black;
+    border-radius: 0.625rem 0.625rem 0.625rem 0.625rem;
+    padding: 0.5rem;
   }
 }

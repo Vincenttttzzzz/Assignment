@@ -114,6 +114,11 @@ document
   .getElementById("checkavailability")
   .addEventListener("click", storeItem);
 
+const roombutton = document.querySelector("#navigation h2");
+
+roombutton.addEventListener("click", function () {
+  localStorage.clear();
+});
 /* Clear storage when page is refreshed */
 /*
 window.addEventListener("beforeunload", function () {

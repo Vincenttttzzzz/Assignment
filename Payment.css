@@ -14,8 +14,9 @@
 
   header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: #6db784;
     margin: 0;
     padding: 0;
@@ -32,6 +33,7 @@
     font-size: 1.25rem;
     text-align: center;
     align-items: center;
+    padding-left: 0.75rem;
   }
 
   button {
@@ -42,7 +44,6 @@
   #navigation {
     display: flex;
     flex-direction: row;
-    justify-content: center;
   }
 
   #navigation h2 {
@@ -52,6 +53,9 @@
     margin: 1.25rem;
     color: black;
     font-size: 0.75rem;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 0.625rem 0.625rem 0.625rem 0.625rem;
   }
 
   #navigation h2:hover {
@@ -302,6 +306,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background-color: #6db784;
     margin: 0;
     padding: 0;
@@ -334,6 +339,11 @@
     margin: 1.25rem;
     color: black;
     font-size: 1rem;
+  }
+
+  #navigation h2:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
   }
 
   #navigation h2:hover {
