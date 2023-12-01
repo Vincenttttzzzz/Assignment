@@ -67,7 +67,7 @@
 
   /*First Page Container*/
   .container {
-    background-image: url("./wireframe/libraryjapan.jpg");
+    background-image: url("./images/libraryjapan.jpg");
     height: 37.5rem;
     width: 100%;
     background-repeat: no-repeat;
@@ -401,7 +401,7 @@
 
   /*First Page Container*/
   .container {
-    background-image: url("./wireframe/libraryjapan.jpg");
+    background-image: url("./images/libraryjapan.jpg");
     height: 37.5rem;
     width: 100%;
     background-repeat: no-repeat;
