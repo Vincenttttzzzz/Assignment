@@ -1,5 +1,6 @@
 const date = new Date();
 
+/* Calendar Feature*/
 const updateCalendar = () => {
   date.setDate(1);
 

@@ -2,6 +2,7 @@ const page = document.querySelector(".Confirmation");
 const booknow = document.querySelector(".BookNow");
 const closepage = document.querySelector(".Confirm");
 
+/* Book Now button */
 booknow.addEventListener("click", function (e) {
   e.preventDefault();
   if (validateForm()) {
@@ -30,6 +31,7 @@ closepage.addEventListener("click", function () {
   page.close();
 });
 
+/* Check input */
 function validateForm() {
   const inputs = document.querySelectorAll("input");
   let isValid = true;
@@ -46,6 +48,7 @@ function validateForm() {
   return isValid;
 }
 
+/* store input in local storage by looping and store values in an array */
 function storeInput() {
   const labels = document.querySelectorAll("label");
   const inputs = document.querySelectorAll("input");
@@ -60,6 +63,7 @@ function storeInput() {
   localStorage.setItem("formData", JSON.stringify(obj));
 }
 
+/* Highlight null input boxes */
 function HighlightError(input, message) {
   const formfield = input.parentElement;
   const small = formfield.querySelector("small");
@@ -74,6 +78,7 @@ function RemoveError(input) {
   formfield.className = "formfield";
 }
 
+/* Retrieving data from local storage*/
 function getData() {
   const formdataString = localStorage.getItem("formData");
   const formdata = JSON.parse(formdataString);
