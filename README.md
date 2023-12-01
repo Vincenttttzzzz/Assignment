@@ -35,6 +35,9 @@ This website is designed for individuals such as book enthusiasts, casual reader
 **Need:** As a book enthusiast, I want to find a comfortable room to read in, so that I am able to relax while immerse myself in the stories.
 **How the project helps:** The website helps users in finding and selecting rooms that are based on their preference to ensure that they can enjoy and indulge themselves in the stories.
 
+![Alt text](image.png)
+![Alt text](image-1.png)
+
 ## Features
 
 Features Home - This page contains the various locations of the bookstore as well as what services it provides, which allows users to find out where the bookstores are located and whether they will enjoy going there.
