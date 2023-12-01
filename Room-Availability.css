@@ -180,7 +180,7 @@
     border-radius: 0rem 0rem 0.9375rem 0.9375rem;
   }
 
-  .Roomslist .Description name {
+  .Roomslist .Description span:first-child {
     font-size: 1.125rem;
     font-weight: bolder;
   }
@@ -421,7 +421,7 @@
     font-size: 1.25vw;
   }
 
-  .Roomslist .Description name,
+  .Roomslist .Description span:first-child,
   .Roomslist .Description .Price strong {
     font-size: 2vw;
     font-weight: bold;

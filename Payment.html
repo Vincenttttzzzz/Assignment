@@ -31,113 +31,113 @@
     <div id="Payment">
       <div id="Guest-Payment">
         <div id="GuestDetails">
-          <name><strong>Guest Information</strong></name>
+          <span><strong>Guest Information</strong></span>
 
-        <form class="form">
-          <div id="container1">
-            <div class="column1">
-              <div class="formfield">
-                <label id="firstname" for="firstname">First Name</label>
-                <input placeholder="Enter First Name" type="text" required />
-                <small>Message</small>
-              </div>
-              <div class="formfield">
-                <label id="lastname" for="lastname">Last Name</label>
-                <input placeholder="Enter Last Name" type="text" required />
-                <small>Message</small>
-              </div>
-            </div>
-
-            <div class="column2">
-              <div class="formfield">
-                <label id="email" for="email">Email Address</label>
-                <input placeholder="Enter Email" type="email" required />
-                <small>Message</small>
-              </div>
-              <div class="formfield">
-                <label id="member" for="member">Member Number</label>
-                <input placeholder="Enter Member Number" type="text" Optional />
-                <small>Message</small>
-              </div>
-            </div>
-          </div>
-
-          <p>
-            Note: To be credited for this stay, the name on your account must
-            match the guest name
-          </p>
-
-          <div id="container2">
-            <div class="column1">
-              <div class="formfield">
-                <label id="country" for="country">Country/Region</label>
-                <input placeholder="Enter Country" type="text" required />
-                <small>Message</small>
-              </div>
-              <div class="formfield">
-                <label id="address" for="address">Address</label>
-                <input placeholder="Enter Address" type="text" required />
-                <small>Message</small>
-              </div>
-            </div>
-
-            <div class="column2">
-              <div class="formfield">
-                <label id="city" for="city">City</label>
-                <input placeholder="Enter City" type="text" required />
-                <small>Message</small>
-              </div>
-              <div class="formfield">
-                <label id="state" for="state">State/Province</label>
-                <input placeholder="Enter State/Province" type="text" required />
-                <small>Message</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-          <div id="PaymentDetails">
-            <name><strong>Payment Information</strong></name>
-
-            <div id="container3">
+          <form class="form">
+            <div id="container1">
               <div class="column1">
                 <div class="formfield">
-                  <label id="cardnumber" for="cardnumber"
-                    >Credit/Debit Card Number</label
-                  >
-                  <input placeholder="Enter Card Number" type="text" required />
+                  <label id="firstnameLabel" for="firstname">First Name</label>
+                  <input id="firstname" placeholder="Enter First Name" type="text" required />
                   <small>Message</small>
                 </div>
                 <div class="formfield">
-                  <label id="zipcode" for="zipcode">Billing Zip Code</label>
-                  <input placeholder="Enter Zip Code" type="text" required />
+                  <label id="lastnameLabel" for="lastname">Last Name</label>
+                  <input id="lastname" placeholder="Enter Last Name" type="text" required />
                   <small>Message</small>
                 </div>
               </div>
 
               <div class="column2">
                 <div class="formfield">
-                  <label id="expmonth" for="expmonth">Expiration Month</label>
-                  <input placeholder="Enter Expiration Month" type="text" required />
+                  <label id="emailLabel" for="email">Email Address</label>
+                  <input id="email" placeholder="Enter Email" type="email" required />
                   <small>Message</small>
                 </div>
                 <div class="formfield">
-                  <label id="expyear" for="expyear">Expiration Year</label>
-                  <input placeholder="Enter Expiration Year" type="text" required />
+                  <label id="memberLabel" for="member">Member Number</label>
+                  <input id="member" placeholder="Enter Member Number" type="text" required />
+                  <small>Message</small>
+                </div>
+              </div>
+            </div>
+
+            <p>
+              Note: To be credited for this stay, the name on your account must
+              match the guest name
+            </p>
+
+            <div id="container2">
+              <div class="column1">
+                <div class="formfield">
+                  <label id="countryLabel" for="country">Country/Region</label>
+                  <input id="country" placeholder="Enter Country" type="text" required />
+                  <small>Message</small>
+                </div>
+                <div class="formfield">
+                  <label id="addressLabel" for="address">Address</label>
+                  <input id="address" placeholder="Enter Address" type="text" required />
+                  <small>Message</small>
+                </div>
+              </div>
+
+              <div class="column2">
+                <div class="formfield">
+                  <label id="cityLabel" for="city">City</label>
+                  <input id="city" placeholder="Enter City" type="text" required />
+                  <small>Message</small>
+                </div>
+                <div class="formfield">
+                  <label id="stateLabel" for="state">State/Province</label>
+                  <input id="state" placeholder="Enter State/Province" type="text" required />
                   <small>Message</small>
                 </div>
               </div>
             </div>
           </div>
 
+            <div id="PaymentDetails">
+              <span><strong>Payment Information</strong></span>
+
+              <div id="container3">
+                <div class="column1">
+                  <div class="formfield">
+                    <label id="cardnumberLabel" for="cardnumber"
+                      >Credit/Debit Card Number</label
+                    >
+                    <input id="cardnumber" placeholder="Enter Card Number" type="text" required />
+                    <small>Message</small>
+                  </div>
+                  <div class="formfield">
+                    <label id="zipcodeLabel" for="zipcode">Billing Zip Code</label>
+                    <input id="zipcode" placeholder="Enter Zip Code" type="text" required />
+                    <small>Message</small>
+                  </div>
+                </div>
+
+                <div class="column2">
+                  <div class="formfield">
+                    <label id="expmonthLabel" for="expmonth">Expiration Month</label>
+                    <input id="expmonth" placeholder="Enter Expiration Month" type="text" required />
+                    <small>Message</small>
+                  </div>
+                  <div class="formfield">
+                    <label id="expyearLabel" for="expyear">Expiration Year</label>
+                    <input id="expyear" placeholder="Enter Expiration Year" type="text" required />
+                    <small>Message</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           <button class="BookNow">Book Now</button>
         </div>
       </form>
 
       <div id="ChosenRoom1">
-        <img src="./wireframe/Room1.png" width="550" , height="350" />
+        <img src="./wireframe/Room1.png" alt="Room1 Image"/>
         <div class="Description">
-          <name>Room 1</name>
+          <span>Room 1</span>
           <span>23 Nov 2023</span>
           <span>1 Room, 1 Adult</span>
           <div class="Price">
