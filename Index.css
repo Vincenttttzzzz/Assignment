@@ -170,6 +170,10 @@
     padding-bottom: 2%;
   }
 
+  .Services img {
+    width: 50vw;
+    height: 40vw;
+  }
   .textarea {
     display: flex;
     flex-direction: column;
