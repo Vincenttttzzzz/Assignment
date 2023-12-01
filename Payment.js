@@ -135,7 +135,6 @@ function storeInput() {
 
 function HighlightError(input, message) {
   const formfield = input.parentElement;
-  console.log(formfield);
   const small = formfield.querySelector("small");
 
   small.innerText = message;
