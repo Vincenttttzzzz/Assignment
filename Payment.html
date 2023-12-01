@@ -30,10 +30,10 @@
 
     <div id="Payment">
       <div id="Guest-Payment">
-        <div id="GuestDetails">
+        <form id="GuestDetails">
           <span><strong>Guest Information</strong></span>
 
-          <form class="form">
+          <div class="form">
             <div id="container1">
               <div class="column1">
                 <div class="formfield">
@@ -94,40 +94,41 @@
                 </div>
               </div>
             </div>
+          </div>
 
-            <div id="PaymentDetails">
-              <span><strong>Payment Information</strong></span>
+          <div id="PaymentDetails">
+            <span><strong>Payment Information</strong></span>
 
-              <div id="container3">
-                <div class="column1">
-                  <div class="formfield">
-                    <label id="cardnumberLabel" for="cardnumber"
-                      >Credit/Debit Card Number</label
-                    >
-                    <input id="cardnumber" placeholder="Enter Card Number" type="text" required />
-                    <small>Message</small>
-                  </div>
-                  <div class="formfield">
-                    <label id="zipcodeLabel" for="zipcode">Billing Zip Code</label>
-                    <input id="zipcode" placeholder="Enter Zip Code" type="text" required />
-                    <small>Message</small>
-                  </div>
+            <div id="container3">
+              <div class="column1">
+                <div class="formfield">
+                  <label id="cardnumberLabel" for="cardnumber"
+                    >Credit/Debit Card Number</label
+                  >
+                  <input id="cardnumber" placeholder="Enter Card Number" type="text" required />
+                  <small>Message</small>
                 </div>
+                <div class="formfield">
+                  <label id="zipcodeLabel" for="zipcode">Billing Zip Code</label>
+                  <input id="zipcode" placeholder="Enter Zip Code" type="text" required />
+                  <small>Message</small>
+                </div>
+              </div>
 
-                <div class="column2">
-                  <div class="formfield">
-                    <label id="expmonthLabel" for="expmonth">Expiration Month</label>
-                    <input id="expmonth" placeholder="Enter Expiration Month" type="text" required />
-                    <small>Message</small>
-                  </div>
-                  <div class="formfield">
-                    <label id="expyearLabel" for="expyear">Expiration Year</label>
-                    <input id="expyear" placeholder="Enter Expiration Year" type="text" required />
-                    <small>Message</small>
-                  </div>
+              <div class="column2">
+                <div class="formfield">
+                  <label id="expmonthLabel" for="expmonth">Expiration Month</label>
+                  <input id="expmonth" placeholder="Enter Expiration Month" type="text" required />
+                  <small>Message</small>
+                </div>
+                <div class="formfield">
+                  <label id="expyearLabel" for="expyear">Expiration Year</label>
+                  <input id="expyear" placeholder="Enter Expiration Year" type="text" required />
+                  <small>Message</small>
                 </div>
               </div>
             </div>
+          </div>
 
           <button class="BookNow">Book Now</button>
         </div>
@@ -156,7 +157,7 @@
 
       <button class="Confirm">Confirm</button>
     </dialog>
-
+    <script src="Payment.js"></script>
   </body>
 
 
@@ -178,5 +179,4 @@
     </div>
   </footer>
 
-  <script src="Payment.js"></script>
 </html>
