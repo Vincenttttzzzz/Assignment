@@ -33,15 +33,18 @@
         <div id="GuestDetails">
           <name><strong>Guest Information</strong></name>
 
-          <form id="container1">
+        <form class="form">
+          <div id="container1">
             <div class="column1">
               <div class="formfield">
                 <label id="firstname" for="firstname">First Name</label>
-                <input type="text" required />
+                <input placeholder="Enter First Name" type="text" required />
+                <small>Message</small>
               </div>
               <div class="formfield">
                 <label id="lastname" for="lastname">Last Name</label>
-                <input type="text" required />
+                <input placeholder="Enter Last Name" type="text" required />
+                <small>Message</small>
               </div>
             </div>
 
@@ -49,83 +52,87 @@
               <div class="formfield">
                 <label id="email" for="email">Email Address</label>
                 <input placeholder="Enter Email" type="email" required />
+                <small>Message</small>
               </div>
               <div class="formfield">
                 <label id="member" for="member">Member Number</label>
-                <input type="text" Optional />
+                <input placeholder="Enter Member Number" type="text" Optional />
+                <small>Message</small>
               </div>
             </div>
-          </form>
+          </div>
 
           <p>
             Note: To be credited for this stay, the name on your account must
             match the guest name
           </p>
-          <!--
-          <div class="checkbox">
-            <input type="checkbox" id="confirmation" name="confirmation" />
-            <label for="confirmation"
-              >Send my reservation confirmation via SMS</label
-            >
-          </div>
--->
-          <form id="container2">
+
+          <div id="container2">
             <div class="column1">
               <div class="formfield">
                 <label id="country" for="country">Country/Region</label>
-                <input type="text" required />
+                <input placeholder="Enter Country" type="text" required />
+                <small>Message</small>
               </div>
               <div class="formfield">
                 <label id="address" for="address">Address</label>
-                <input type="text" required />
+                <input placeholder="Enter Address" type="text" required />
+                <small>Message</small>
               </div>
             </div>
 
             <div class="column2">
               <div class="formfield">
                 <label id="city" for="city">City</label>
-                <input type="text" required />
+                <input placeholder="Enter City" type="text" required />
+                <small>Message</small>
               </div>
               <div class="formfield">
                 <label id="state" for="state">State/Province</label>
-                <input type="text" Optional />
+                <input placeholder="Enter State/Province" type="text" required />
+                <small>Message</small>
               </div>
             </div>
-          </form>
+          </div>
         </div>
 
-        <div id="PaymentDetails">
-          <name><strong>Payment Information</strong></name>
+          <div id="PaymentDetails">
+            <name><strong>Payment Information</strong></name>
 
-          <form id="container3">
-            <div class="column1">
-              <div class="formfield">
-                <label id="cardnumber" for="cardnumber"
-                  >Credit/Debit Card Number</label
-                >
-                <input type="text" required />
+            <div id="container3">
+              <div class="column1">
+                <div class="formfield">
+                  <label id="cardnumber" for="cardnumber"
+                    >Credit/Debit Card Number</label
+                  >
+                  <input placeholder="Enter Card Number" type="text" required />
+                  <small>Message</small>
+                </div>
+                <div class="formfield">
+                  <label id="zipcode" for="zipcode">Billing Zip Code</label>
+                  <input placeholder="Enter Zip Code" type="text" required />
+                  <small>Message</small>
+                </div>
               </div>
-              <div class="formfield">
-                <label id="zipcode" for="zipcode">Billing Zip Code</label>
-                <input type="text" required />
+
+              <div class="column2">
+                <div class="formfield">
+                  <label id="expmonth" for="expmonth">Expiration Month</label>
+                  <input placeholder="Enter Expiration Month" type="text" required />
+                  <small>Message</small>
+                </div>
+                <div class="formfield">
+                  <label id="expyear" for="expyear">Expiration Year</label>
+                  <input placeholder="Enter Expiration Year" type="text" required />
+                  <small>Message</small>
+                </div>
               </div>
             </div>
+          </div>
 
-            <div class="column2">
-              <div class="formfield">
-                <label id="expmonth" for="expmonth">Expiration Month</label>
-                <input type="text" required />
-              </div>
-              <div class="formfield">
-                <label id="expyear" for="expyear">Expiration Year</label>
-                <input type="text" Optional />
-              </div>
-            </div>
-          </form>
+          <button class="BookNow">Book Now</button>
         </div>
-
-        <button class="BookNow">Book Now</button>
-      </div>
+      </form>
 
       <div id="ChosenRoom1">
         <img src="./wireframe/Room1.png" width="550" , height="350" />
