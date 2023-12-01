@@ -38,6 +38,8 @@ This website is designed for individuals such as book enthusiasts, casual reader
 ![Alt text](image.png)
 ![Alt text](image-1.png)
 
+Figma Link: https://www.figma.com/file/BGyb1xJWQJIH26P9itL98U/Untitled?type=design&node-id=50%3A2&mode=design&t=Des19ceZabwQeToc-1
+
 ## Features
 
 Features Home - This page contains the various locations of the bookstore as well as what services it provides, which allows users to find out where the bookstores are located and whether they will enjoy going there.
